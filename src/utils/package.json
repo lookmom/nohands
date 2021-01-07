@@ -1,0 +1,9 @@
+{
+  "name": "@src/utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "i18next": "19.8.4"
+  }
+}

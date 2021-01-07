@@ -1,0 +1,11 @@
+{
+  "name": "@src/locales",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@src/utils": "1.0.0",
+    "i18next": "19.8.4",
+    "react-i18next": "11.8.5"
+  }
+}

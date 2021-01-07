@@ -15,7 +15,7 @@
     "not dead"
   ],
   "scripts": {
-    "start": "parcel serve ./src/app/index.html -p 1337 --open",
+    "start": "parcel serve ./src/app/index.html --port 1337 --https --open",
     "prebuild": "yarn clean",
     "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --detailed-report --no-source-maps",
     "// build (currently not working)": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --detailed-report --no-source-maps",

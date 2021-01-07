@@ -1,11 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useTranslation} from 'react-i18next';
+import HelloWorld from '@src/components/HelloWorld';
 
 const BlogExample = () => {
+  const { t } = useTranslation();
   // Borrowed from https://github.com/twbs/bootstrap/blob/2185803964f0df8a54c490dea9728a59b1bba82d/site/content/docs/5.0/examples/blog/index.html
 
   return (
     <>
+      <Helmet>
+        <title>{t('PAGE.BLOG.TITLE')}</title>
+      </Helmet>
       <div className="container">
+        <HelloWorld />
         <header className="blog-header py-3">
           <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-4 pt-1">
@@ -59,7 +67,7 @@ const BlogExample = () => {
                 <a href="#" className="stretched-link">Continue reading</a>
               </div>
               <div className="col-auto d-none d-lg-block">
-                <img src="http://placehold.it/200x250/55595c.jpg?text=Thumbnail" />
+                <img src="https://placehold.it/200x250/55595c.jpg?text=Thumbnail" />
               </div>
             </div>
           </div>
@@ -73,7 +81,7 @@ const BlogExample = () => {
                 <a href="#" className="stretched-link">Continue reading</a>
               </div>
               <div className="col-auto d-none d-lg-block">
-                <img src="http://placehold.it/200x250/55595c.jpg?text=Thumbnail" />
+                <img src="https://placehold.it/200x250/55595c.jpg?text=Thumbnail" />
               </div>
             </div>
           </div>
