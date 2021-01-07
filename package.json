@@ -10,12 +10,15 @@
     "node": ">=12.0.0",
     "yarn": ">=1.22.4"
   },
-  "browserslist": ["> 2%", "not dead"],
+  "browserslist": [
+    "> 2%",
+    "not dead"
+  ],
   "scripts": {
     "start": "parcel serve ./src/app/index.html -p 1337 --open",
     "prebuild": "yarn clean",
-    "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --dist-dir dist --detailed-report --no-source-maps",
-    "// build (currently not working)": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --dist-dir ./dist --detailed-report --no-source-maps",
+    "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --detailed-report --no-source-maps",
+    "// build (currently not working)": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --detailed-report --no-source-maps",
     "clean": "rimraf build .parcel-cache; yarn workspaces run clean && git gc",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
@@ -39,7 +42,7 @@
     "cross-env": "7.0.3",
     "eslint-plugin-react-hooks": "4.2.0",
     "node-sass": "5.0.0",
-    "parcel": "2.0.0-beta.1",
+    "parcel": "2.0.0-nightly.514",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "sass": "1.32.2",

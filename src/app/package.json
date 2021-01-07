@@ -1,12 +1,8 @@
 {
   "name": "@src/app",
   "version": "1.0.0",
-  "main": "index.html",
-  "targets": {
-    "main": {
-      "distDir": "../../build"
-    }
-  },
+  "main": "build/index.html",
+  "browserslist": "> 2%, not dead",
   "license": "MIT",
   "dependencies": {
     "@src/components": "1.0.0",
