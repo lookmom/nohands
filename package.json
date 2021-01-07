@@ -14,8 +14,8 @@
   "scripts": {
     "start": "parcel serve ./src/app/index.html -p 1337 --open",
     "prebuild": "yarn clean",
-    "build": "parcel build ./src/app/index.html --dist-dir ./build --detailed-report --no-source-maps",
-    "// build (currently not working)": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --dist-dir ./build --detailed-report --no-source-maps",
+    "build": "parcel build ./src/app/index.html --dist-dir ./dist --detailed-report",
+    "// build (currently not working)": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --dist-dir ./dist --detailed-report --no-source-maps",
     "clean": "rimraf build .parcel-cache; yarn workspaces run clean && git gc",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
