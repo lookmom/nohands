@@ -1,0 +1,21 @@
+{
+  "name": "@src/app",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "@src/components": "1.0.0",
+    "@types/react-helmet": "6.1.0",
+    "bootstrap": "4.5.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0",
+    "react-router-dom": "5.2.0",
+    "reactstrap": "8.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@types/react-router-dom": "5.1.7"
+  }
+}

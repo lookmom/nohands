@@ -1,0 +1,5 @@
+**/.cache
+**/dist
+**/devDist
+**/build
+**/node_modules

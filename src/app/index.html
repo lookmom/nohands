@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <title>Hello World!</title>
+    <meta name="description" content="Hello World Description" />
+
+    <script src="./index.tsx" defer></script>
+
+    <link rel="stylesheet" href="./index.scss" />
+  </head>
+
+  <body>
+
+    <section id="root">
+      <div class="container d-flex flex-column justify-content-center align-items-center" style="flex: 1;">
+
+        <div id="initial-spinner" class="spinner-border text-dark" role="status">
+          <span class="sr-only" lang="en">Loading...</span>
+        </div>
+
+        <noscript>
+          <div class="alert alert-warning" role="alert" lang="en">
+            <h4 class="alert-heading">Heads up!</h4>
+            <p>You need to enable JavaScript to run this app.</p>
+          </div>
+          <hr />
+          <div class="alert alert-warning" role="alert" lang="de">
+            <h4 class="alert-heading">Aufgepasst!</h4>
+            <p>Sie müssen JavaScript aktivieren um diese Applikation auszuführen.</p>
+          </div>
+        </noscript>
+
+        <div id="unsupported-browser-message" class="fade">
+          <div class="alert alert-warning" role="alert" lang="en">
+            <h4 class="alert-heading">Heads up!</h4>
+            <p>
+              Your browser doesn't seem to support the techniques used to render this website. Because of this
+              <strong>- and for security reasons -</strong> we strongly recommend upgrading to a state-of-the art browser.
+            </p>
+            <p>
+              Head over to <a href="https://browsehappy.com/?locale=en" target="_blank" rel="noopener noreferrer">https://browsehappy.com/</a> for
+              further instructions.
+            </p>
+          </div>
+          <hr />
+          <div class="alert alert-warning" role="alert" lang="de">
+            <h4 class="alert-heading">Aufgepasst!</h4>
+            <p>
+              Ihr Browser scheint die Techniken nicht zu unterstützen, die hier eingesetzt werden um die Seite korrekt
+              darzustellen. Deshalb <strong>- und zu Ihrer Sicherheit -</strong> empfehlen wir Ihnen zu einem aktuellen
+              Browser zu wechseln.
+            </p>
+            <p>
+              Gehen Sie zu <a href="https://browsehappy.com/?locale=de" target="_blank" rel="noopener noreferrer">https://browsehappy.com/</a> für
+              weitere Informationen.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

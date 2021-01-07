@@ -1,0 +1,48 @@
+{
+  "name": "@lookmom/nohands",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lookmom/nohands.git",
+  "author": "Kai Dorschner <me@krnl.de>",
+  "license": "MIT",
+  "sideEffects": false,
+  "private": "true",
+  "engines": {
+    "node": ">=12.0.0",
+    "yarn": ">=1.22.4"
+  },
+  "scripts": {
+    "start": "parcel serve ./src/app/index.html -p 1337 --open",
+    "prebuild": "yarn clean",
+    "build": "parcel build ./src/app/index.html --dist-dir ./build --detailed-report --no-source-maps",
+    "---build:not-working": "cross-env PARCEL_BUNDLE_ANALYZER=1 parcel build ./src/app/index.html --dist-dir ./build --detailed-report 10",
+    "clean": "rimraf build .parcel-cache; yarn workspaces run clean && git gc",
+    "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
+    "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
+    "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
+    "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/app | dot -T svg > dependency-graph.svg",
+    "check:all": "clear && npm-run-all -c check:ts lint:ts check:deps",
+    "postinstall": "yarn clean",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\""
+  },
+  "workspaces": [
+    "src/api",
+    "src/app",
+    "src/assets",
+    "src/components",
+    "src/locales",
+    "src/utils"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "cross-env": "7.0.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "node-sass": "^5.0.0",
+    "parcel": "2.0.0-beta.1",
+    "prettier": "^2.2.1",
+    "rimraf": "3.0.2",
+    "sass": "1.32.2",
+    "typescript": "^4.1.3"
+  }
+}
