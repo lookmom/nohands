@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@src/components": "1.0.0",
+    "@src/locales": "1.0.0",
     "@types/react-helmet": "6.1.0",
     "bootstrap": "4.5.3",
     "react": "17.0.1",
