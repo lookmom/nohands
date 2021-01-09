@@ -4,9 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@src/api": "1.0.0",
+    "@src/utils": "1.0.0",
     "bootstrap": "4.5.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "reactstrap": "8.8.1"
   },
   "devDependencies": {
     "@types/react": "17.0.0",

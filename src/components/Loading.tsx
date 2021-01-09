@@ -1,10 +1,12 @@
 import React from 'react';
 
-import Spinner from 'reactstrap/lib/Spinner';
+import LoadingSpinner from './LoadingSpinner';
 
-const Loading: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+const Loading: React.FC<React.PropsWithChildren<Record<string, never>>> = ({ children }) => {
   return (
-    <React.Suspense fallback={<Spinner />}>{ children }</React.Suspense>
+    <React.Suspense fallback={<LoadingSpinner />}>
+      { children }
+    </React.Suspense>
   );
 };
 

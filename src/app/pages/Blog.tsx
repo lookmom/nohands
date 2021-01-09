@@ -1,6 +1,9 @@
 import React from 'react';
+
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+
+import HelloWorld from '@src/components/HelloWorld';
 
 const BlogExample = () => {
   const { t } = useTranslation();
@@ -54,6 +57,8 @@ const BlogExample = () => {
             <p className="lead mb-0"><a href="#" className="text-white font-weight-bold">Continue reading...</a></p>
           </div>
         </div>
+
+        <HelloWorld />
 
         <div className="row mb-2">
           <div className="col-md-6">
