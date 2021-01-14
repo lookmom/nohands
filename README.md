@@ -14,8 +14,8 @@ nohands is my personal, opinionated, zero-config starter kit based on:
 * [stylelint](https://stylelint.io/) for its help in consistency and quality
 * [eslint](https://eslint.org/) for its help in consistency and quality
 * [lint-staged](https://github.com/okonet/lint-staged) for its convenience when working together
-* [husky](https://typicode.github.io/husky/) required to enable the above
-* [editorconfig](https://editorconfig.org/)
+* [husky](https://typicode.github.io/husky/), required to enable the above
+* [editorconfig](https://editorconfig.org/) just for fun
 
 No static site generator though.
 
