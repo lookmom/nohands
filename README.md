@@ -33,10 +33,6 @@ Install
 =======
 * in project-root run `yarn install`
 
-Start developing
-================
-* in project-root run `yarn start`
-
 Pro Tip
 =======
 I added aliases for the main commands (windows cmder):
@@ -53,3 +49,20 @@ alias gcam=git commit -am $*
 alias gs=git status $*
 alias gps=git push $*
 ```
+
+Start developing
+================
+* in project-root run `yarn start`
+
+QA and code quality
+===================
+There are multiple libraries involved in ensuring the best possible code quality, even when working with teams.
+
+To verify parts of the code on-demand just do (one of) the following:
+* in project-root run `yarn check:ts` to verify that the typescript compiler can interprete your project and otherwise lists the errors
+* in project-root run `yarn lint:ts` to let eslint crawl through your code and find warnings and errors
+* in project-root run `yarn check:deps` to let dependency-cruiser check all your dependencies
+* in project-root run `yarn check:all` to run all the above tests
+* in project-root run `yarn pretty` to clean up all auto-fixable code styling warnings and errors
+
+Also lint-staged will do all the above (except `check:deps`) with all staged files in a `pre-commit` git hook.
