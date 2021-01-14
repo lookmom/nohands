@@ -29,6 +29,16 @@ Prerequisites
 * [yarn](https://yarnpkg.com/) `>= 1.22.4`
 * Under windows: [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): `npm install --global --production windows-build-tools@4.0.0`
 
+It is also recommended (though not required) to install the following plugins in your IDE (I favor VSCode) to get the most out of this repo:
+* EditorConfig
+* ESLint
+* gitignore
+* Prettier
+* SCSS
+* stylelint
+* Typescript-Essentials
+* Visual Studio IndelliCode
+
 Install
 =======
 * in project-root run `yarn install`
