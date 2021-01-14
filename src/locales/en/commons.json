@@ -1,7 +1,12 @@
 {
   "PAGE": {
     "BLOG": {
-      "TITLE": "Blog Template · Bootstrap"
+      "TITLE": "Blog Template · Bootstrap",
+      "DESCRIPTION": "Template example from getbootstrap.com"
+    },
+    "NOTFOUND": {
+      "TITLE:": "404 - Not Found",
+      "DESCRIPTION": "This page does not exist or has been removed."
     }
   }
 }

@@ -5,5 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "@src/utils": "1.0.0"
+  },
+  "dependencies": {
+    "i18next": "19.8.4"
   }
 }
