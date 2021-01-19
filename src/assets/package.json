@@ -4,6 +4,6 @@
   "main": "theme.scss",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.5.3"
+    "bootstrap": "4.6.0"
   }
 }
