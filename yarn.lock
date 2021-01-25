@@ -951,10 +951,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@prettier/plugin-xml@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-0.12.0.tgz#975522ac9216e66b0f5d240b4b5a8109c423d427"
-  integrity sha512-196oXlmim2SiqeG1jQO5aS/nChI85DvyfIQTBkOiVHHev2j15x4TVxOMGAWHkqdlD8pmCg/KmX8SfFIyT2L7tA==
+"@prettier/plugin-xml@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-0.13.0.tgz#0927ab554668de0a9c6c5d15c5f94a9346c79a01"
+  integrity sha512-kjC8ZoqrNdSGyUfGS0KGxmA2YxI/mpO2bQtOsg8663DISyfvkN/1LoR8nO+0BaAKkGWhP2rzgk6rqiSEQz8vQw==
   dependencies:
     "@xml-tools/parser" "^1.0.2"
     prettier ">=1.10"
@@ -2084,10 +2084,10 @@ command-exists@^1.2.6:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
-commander@6.2.1, commander@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
-  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
+commander@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-7.0.0.tgz#3e2bbfd8bb6724760980988fb5b22b7ee6b71ab2"
+  integrity sha512-ovx/7NkTrnPuIV8sqk/GjUIIM1+iUQeqA3ye2VNpq9sVoiZsooObWlQy+OPWGI17GDaEoybuAGJm6U8yC077BA==
 
 commander@^2.11.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
@@ -2098,6 +2098,11 @@ commander@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
   integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
+
+commander@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
+  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
 compare-versions@^3.6.0:
   version "3.6.0"
@@ -2602,10 +2607,10 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
-dependency-cruiser@9.21.6:
-  version "9.21.6"
-  resolved "https://registry.yarnpkg.com/dependency-cruiser/-/dependency-cruiser-9.21.6.tgz#6634353872aa8a6cb375054eb717b0b81d2a7fb6"
-  integrity sha512-HFHCFQnqWgcQi4+oJRt/m9NUoitaMRTV5TQ+XnRZcj/+TA2mS6ROSIaBY0MfTzA2VF11dguc1ViCq6M49CSSaA==
+dependency-cruiser@9.22.0:
+  version "9.22.0"
+  resolved "https://registry.yarnpkg.com/dependency-cruiser/-/dependency-cruiser-9.22.0.tgz#4467bc37331c93fc41258e67732d45871e88df0b"
+  integrity sha512-XlPQmo+fM4jeKVXYLf9bvMKiP0vs9pTSyvMs2HFibBHMDm22XaOWtJ2hsRV9QDk2RSptQshkYm2JY0x7A3yJww==
   dependencies:
     acorn "8.0.4"
     acorn-jsx "5.3.1"
@@ -2614,7 +2619,7 @@ dependency-cruiser@9.21.6:
     acorn-walk "8.0.1"
     ajv "7.0.3"
     chalk "4.1.0"
-    commander "6.2.1"
+    commander "7.0.0"
     enhanced-resolve "5.1.0"
     figures "3.2.0"
     get-stream "6.0.0"
