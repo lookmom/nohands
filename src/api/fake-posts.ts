@@ -9,9 +9,7 @@ export interface Post {
 
 export type Posts = Post[];
 
-const FAKE_POSTS: Posts = [
-  {id: 1, title: "hello world"}
-];
+const FAKE_POSTS: Posts = [{ id: 1, title: 'hello world' }];
 
 export async function fakeGetPosts() {
   // return await Backend.get<Posts>('some/path/file.extension');

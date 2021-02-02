@@ -12,13 +12,7 @@ const HelloWorld: React.FC = () => {
 
   if (loading) return <LoadingSpinner />;
 
-  return (
-    <>
-      {posts && posts.map((post) => (
-        <Alert key={post.id}>{post.title}</Alert>
-      ))}
-    </>
-  );
+  return <>{posts && posts.map((post) => <Alert key={post.id}>{post.title}</Alert>)}</>;
 };
 
 export default HelloWorld;
