@@ -20,7 +20,7 @@
     "sb": "yarn start:build",
     "prebuild": "yarn clean",
     "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --detailed-report --no-source-maps",
-    "clean": "rimraf build .parcel-cache; yarn workspaces run clean && git gc",
+    "clean": "rimraf build .cache .parcel-cache src/**/.cache src/**/.parcel-cache; yarn workspaces run clean && git gc",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
     "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
