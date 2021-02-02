@@ -16,10 +16,11 @@
   ],
   "scripts": {
     "start": "parcel serve ./src/app/index.html --port 1337 --https --open",
-    "start:build": "servor ./dist --browse",
+    "start:build": "servor ./build --browse",
     "sb": "yarn start:build",
     "prebuild": "yarn clean",
-    "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --detailed-report --no-source-maps",
+    "build": "parcel build ./src/app/index.html --no-cache --log-level verbose --out-dir build --detailed-report --no-source-maps",
+    "build:sourcemaps": "parcel build ./src/app/index.html --no-cache --log-level verbose --out-dir build --detailed-report",
     "clean": "rimraf build .cache .parcel-cache src/**/.cache src/**/.parcel-cache; yarn workspaces run clean && git gc",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
