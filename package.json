@@ -27,7 +27,7 @@
     "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
     "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/app | dot -T svg > dependency-graph.svg",
     "check:all": "clear && npm-run-all -c check:ts lint:ts check:deps",
-    "postinstall": "yarn clean",
+    "postinstall": "husky install && yarn clean",
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\""
   },
   "workspaces": [
@@ -40,17 +40,17 @@
   ],
   "devDependencies": {
     "@prettier/plugin-xml": "0.13.0",
-    "@typescript-eslint/eslint-plugin": "4.14.2",
-    "@typescript-eslint/parser": "4.14.2",
+    "@typescript-eslint/eslint-plugin": "4.15.0",
+    "@typescript-eslint/parser": "4.15.0",
     "cross-env": "7.0.3",
-    "dependency-cruiser": "9.22.1",
+    "dependency-cruiser": "9.23.0",
     "eslint": "7.19.0",
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "husky": "4.3.8",
+    "husky": "5.0.9",
     "lint-staged": "10.5.4",
     "npm-run-all": "4.1.5",
     "parcel-bundler": "1.12.4",
@@ -61,12 +61,7 @@
     "stylelint": "13.9.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-prettier": "1.1.2",
-    "typescript": "4.1.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "typescript": "4.1.5"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
