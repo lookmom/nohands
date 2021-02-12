@@ -4,7 +4,10 @@ export async function sleep(milliseconds: number) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
-export function useAsyncResult<S = undefined>(asyncFunction: () => Promise<S>, dependencies: React.DependencyList = []): [boolean, S] {
+export function useAsyncResult<S = undefined>(
+  asyncFunction: () => Promise<S>,
+  dependencies: React.DependencyList = []
+): [boolean, S] {
   const [loading, setLoading] = React.useState(false);
   const [state, setState] = React.useState<S | null>();
   React.useEffect(() => {

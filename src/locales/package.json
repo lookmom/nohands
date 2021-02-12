@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@src/utils": "1.0.0",
-    "i18next": "19.8.4",
-    "react-i18next": "11.8.5"
+    "i18next": "19.8.7",
+    "react-i18next": "11.8.6"
   }
 }
