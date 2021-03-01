@@ -7,6 +7,6 @@
     "@src/utils": "1.0.0"
   },
   "dependencies": {
-    "i18next": "19.8.9"
+    "i18next": "19.9.1"
   }
 }
