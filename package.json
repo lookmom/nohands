@@ -39,7 +39,7 @@
     "src/utils"
   ],
   "devDependencies": {
-    "@prettier/plugin-xml": "0.13.0",
+    "@prettier/plugin-xml": "0.13.1",
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "cross-env": "7.0.3",
