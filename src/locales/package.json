@@ -6,6 +6,6 @@
   "dependencies": {
     "@src/utils": "1.0.0",
     "i18next": "19.9.1",
-    "react-i18next": "11.8.8"
+    "react-i18next": "11.8.9"
   }
 }
