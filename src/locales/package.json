@@ -1,7 +1,7 @@
 {
   "name": "@src/locales",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "i18n.ts",
   "license": "MIT",
   "dependencies": {
     "@src/utils": "1.0.0",
