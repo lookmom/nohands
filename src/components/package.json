@@ -1,18 +1,16 @@
 {
   "name": "@src/components",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "dependencies": {
     "@src/api": "1.0.0",
     "@src/utils": "1.0.0",
     "bootstrap": "4.6.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
     "reactstrap": "8.9.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.3",
-    "@types/react-dom": "17.0.3"
+    "@types/react": "17.0.3"
   }
 }

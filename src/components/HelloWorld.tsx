@@ -12,7 +12,7 @@ const HelloWorld: React.FC = () => {
 
   if (loading) return <LoadingSpinner />;
 
-  // return <><Alert>Hello Static World</Alert></>;
+  // return <Alert>Hello Static World</Alert>;
   return <>{posts && posts.map((post) => <Alert key={post.id}>{post.title}</Alert>)}</>;
 };
 

@@ -1,11 +1,11 @@
 {
-  "name": "@lookmom/nohands",
+  "name": "nohands",
   "version": "1.0.0",
   "repository": "git@github.com:lookmom/nohands.git",
   "author": "Kai Dorschner <me@krnl.de>",
   "license": "MIT",
   "sideEffects": false,
-  "private": "true",
+  "private": true,
   "engines": {
     "node": ">=12.0.0",
     "yarn": ">=1.22.4"
@@ -15,7 +15,7 @@
     "not dead"
   ],
   "scripts": {
-    "start": "parcel serve ./src/app/index.html --port 1337 --https --open",
+    "start": "parcel serve src/app/index.html --https --open",
     "start:build": "servor ./build --browse",
     "sb": "yarn start:build",
     "prebuild": "yarn clean",
@@ -31,14 +31,10 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\""
   },
   "workspaces": [
-    "src/api",
-    "src/app",
-    "src/assets",
-    "src/components",
-    "src/locales",
-    "src/utils"
+    "src/*"
   ],
-  "devDependencies": {
+  "dependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.2",
     "@prettier/plugin-xml": "0.13.1",
     "@typescript-eslint/eslint-plugin": "4.19.0",
     "@typescript-eslint/parser": "4.19.0",

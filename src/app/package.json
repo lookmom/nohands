@@ -1,13 +1,12 @@
 {
   "name": "@src/app",
   "version": "1.0.0",
-  "main": "build/index.html",
+  "main": "index.html",
   "browserslist": "> 2%, not dead",
   "license": "MIT",
   "dependencies": {
     "@src/components": "1.0.0",
     "@src/locales": "1.0.0",
-    "@types/react-helmet": "6.1.0",
     "bootstrap": "4.6.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -17,10 +16,9 @@
     "reactstrap": "8.9.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.0.0-beta.2",
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.3",
-    "@types/react-router-dom": "5.1.7",
-    "sass": "1.32.8"
+    "@types/react-helmet": "6.1.0",
+    "@types/react-router-dom": "5.1.7"
   }
 }
