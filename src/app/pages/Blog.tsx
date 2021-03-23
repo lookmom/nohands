@@ -15,12 +15,12 @@ const BlogExample = () => {
         <meta name="description" content={t('PAGE.BLOG.TITLE')} />
       </Helmet>
 
-      {/* Markup borrowed from https://github.com/twbs/bootstrap/blob/2185803964f0df8a54c490dea9728a59b1bba82d/site/content/docs/5.0/examples/blog/index.html */}
+      {/* Markup borrowed from https://github.com/twbs/bootstrap/blob/5693f1ad863832adb01ed1ca9cd24c825fc640f4/site/content/docs/5.0/examples/blog/index.html */}
       <div className="container">
         <header className="blog-header py-3">
           <div className="row flex-nowrap justify-content-between align-items-center">
             <div className="col-4 pt-1">
-              <a className="text-muted" href="#">
+              <a className="link-secondary" href="#">
                 Subscribe
               </a>
             </div>
@@ -30,7 +30,7 @@ const BlogExample = () => {
               </a>
             </div>
             <div className="col-4 d-flex justify-content-end align-items-center">
-              <a className="text-muted" href="#" aria-label="Search">
+              <a className="link-secondary" href="#" aria-label="Search">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -58,54 +58,56 @@ const BlogExample = () => {
 
         <div className="nav-scroller py-1 mb-2">
           <nav className="nav d-flex justify-content-between">
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               World
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               U.S.
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Technology
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Design
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Culture
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Business
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Politics
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Opinion
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Science
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Health
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Style
             </a>
-            <a className="p-2 text-muted" href="#">
+            <a className="p-2 link-secondary" href="#">
               Travel
             </a>
           </nav>
         </div>
+      </div>
 
-        <div className="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <main className="container">
+        <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
           <div className="col-md-6 px-0">
-            <h1 className="display-4 font-italic">Title of a longer featured blog post</h1>
+            <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
             <p className="lead my-3">
               Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most
               interesting in this post’s contents.
             </p>
             <p className="lead mb-0">
-              <a href="#" className="text-white font-weight-bold">
+              <a href="#" className="text-white fw-bold">
                 Continue reading...
               </a>
             </p>
@@ -116,7 +118,7 @@ const BlogExample = () => {
 
         <div className="row mb-2">
           <div className="col-md-6">
-            <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
                 <strong className="d-inline-block mb-2 text-primary">World</strong>
                 <h3 className="mb-0">Featured post</h3>
@@ -134,7 +136,7 @@ const BlogExample = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
                 <strong className="d-inline-block mb-2 text-success">Design</strong>
                 <h3 className="mb-0">Post title</h3>
@@ -152,14 +154,12 @@ const BlogExample = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      <main role="main" className="container">
         <div className="row">
-          <div className="col-md-8 blog-main">
-            <h3 className="pb-4 mb-4 font-italic border-bottom">From the Firehose</h3>
+          <div className="col-md-8">
+            <h3 className="pb-4 mb-4 fst-italic border-bottom">From the Firehose</h3>
 
-            <div className="blog-post">
+            <article className="blog-post">
               <h2 className="blog-post-title">Sample blog post</h2>
               <p className="blog-post-meta">
                 January 1, 2014 by <a href="#">Mark</a>
@@ -171,107 +171,107 @@ const BlogExample = () => {
               </p>
               <hr />
               <p>
-                Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
-                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur
-                est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+                Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby,{' '}
+                <a href="#">you're a firework</a>. Maybe a reason why all the doors are closed. Open up your heart and
+                just let it begin. So très chic, yeah, she's a classic.
               </p>
               <blockquote>
                 <p>
-                  Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu
-                  leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Bikinis, zucchinis, Martinis, no weenies. I know there will be sacrifice but that's the price.{' '}
+                  <strong>This is how we do it</strong>. I'm not sticking around to watch you go down. You think you're
+                  so rock and roll, but you're really just a joke. I know one spark will shock the world, yeah yeah.
+                  Can't replace you with a million rings.
                 </p>
               </blockquote>
               <p>
-                Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                Trying to connect the dots, don't know what to tell my boss. Before you met me I was alright but things
+                were kinda heavy. You just gotta ignite the light and let it shine. Glitter all over the room{' '}
+                <em>pink flamingos</em> in the pool.{' '}
               </p>
               <h2>Heading</h2>
               <p>
-                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
-                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                consectetur ac, vestibulum at eros.
+                Suiting up for my crowning battle. If you only knew what the future holds. Bring the beat back.
+                Peach-pink lips, yeah, everybody stares.
               </p>
               <h3>Sub-heading</h3>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <p>
+                You give a hundred reasons why, and you say you're really gonna try. Straight stuntin' yeah we do it
+                like that. Calling out my name. ‘Cause I, I’m capable of anything.
+              </p>
               <pre>
                 <code>Example code block</code>
               </pre>
               <p>
-                Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+                Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it
+                shine.
               </p>
               <h3>Sub-heading</h3>
               <p>
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-                bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
-                cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on
+                lock. Never planned that one day I'd be losing you. She eats your heart out.
               </p>
               <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                <li>Got a motel and built a fort out of sheets.</li>
+                <li>Your kiss is cosmic, every move is magic.</li>
+                <li>Suiting up for my crowning battle.</li>
               </ul>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <p>Takes you miles high, so high, 'cause she’s got that one international smile.</p>
               <ol>
-                <li>Vestibulum id ligula porta felis euismod semper.</li>
-                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                <li>Scared to rock the boat and make a mess.</li>
+                <li>I could have rewrite your addiction.</li>
+                <li>I know you get me so I let my walls come down.</li>
               </ol>
-              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-            </div>
+              <p>After a hurricane comes a rainbow.</p>
+            </article>
 
-            <div className="blog-post">
+            <article className="blog-post">
               <h2 className="blog-post-title">Another blog post</h2>
               <p className="blog-post-meta">
                 December 23, 2013 by <a href="#">Jacob</a>
               </p>
 
               <p>
-                Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
-                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur
-                est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+                I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky
+                if you're on her plane. I used to bite my tongue and hold my breath. Uh, She’s a beast. I call her Karma
+                (come back). Black ray-bans, you know she's with the band. I can't sleep let's run away and don't ever
+                look back, don't ever look back.
               </p>
               <blockquote>
                 <p>
-                  Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu
-                  leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                  Growing fast into a <strong>bolt of lightning</strong>. Be careful Try not to lead her on
                 </p>
               </blockquote>
               <p>
-                Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                I'm intrigued, for a peek, heard it's fascinating. Oh oh! Wanna be a victim ready for abduction. She's
+                got that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so
+                paper thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.
               </p>
-              <p>
-                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
-                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                consectetur ac, vestibulum at eros.
-              </p>
-            </div>
+              <p>This is transcendental, on another level, boy, you're my lucky star.</p>
+            </article>
 
-            <div className="blog-post">
+            <article className="blog-post">
               <h2 className="blog-post-title">New feature</h2>
               <p className="blog-post-meta">
                 December 14, 2013 by <a href="#">Chris</a>
               </p>
 
               <p>
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-                bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
-                cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your
+                Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your
+                popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.
               </p>
               <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                <li>I hope you got a healthy appetite.</li>
+                <li>You're never gonna be unsatisfied.</li>
+                <li>Got a motel and built a fort out of sheets.</li>
               </ul>
               <p>
-                Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>,
+                extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.
               </p>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            </div>
+            </article>
 
-            <nav className="blog-pagination">
+            <nav className="blog-pagination" aria-label="Pagination">
               <a className="btn btn-outline-primary" href="#">
                 Older
               </a>
@@ -281,17 +281,17 @@ const BlogExample = () => {
             </nav>
           </div>
 
-          <aside className="col-md-4 blog-sidebar">
+          <div className="col-md-4">
             <div className="p-4 mb-3 bg-light rounded">
-              <h4 className="font-italic">About</h4>
+              <h4 className="fst-italic">About</h4>
               <p className="mb-0">
-                Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
-                fermentum. Aenean lacinia bibendum nulla sed consectetur.
+                Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is
+                the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up above.
               </p>
             </div>
 
             <div className="p-4">
-              <h4 className="font-italic">Archives</h4>
+              <h4 className="fst-italic">Archives</h4>
               <ol className="list-unstyled mb-0">
                 <li>
                   <a href="#">March 2014</a>
@@ -333,7 +333,7 @@ const BlogExample = () => {
             </div>
 
             <div className="p-4">
-              <h4 className="font-italic">Elsewhere</h4>
+              <h4 className="fst-italic">Elsewhere</h4>
               <ol className="list-unstyled">
                 <li>
                   <a href="#">GitHub</a>
@@ -346,7 +346,7 @@ const BlogExample = () => {
                 </li>
               </ol>
             </div>
-          </aside>
+          </div>
         </div>
       </main>
 

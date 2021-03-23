@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { I18nextProvider } from 'react-i18next';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import i18nInit from '@src/locales/i18n';
 import Loading from '@src/components/Loading';

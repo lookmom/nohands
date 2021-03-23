@@ -19,8 +19,6 @@ nohands is my personal, opinionated, zero-config starter kit based on:
 
 No static site generator though.
 
-_Heads up:_ Right now I stick to parcel v1 because parcel v2 is only in beta right now and doesn't support node_modules / symlink watching right now (see [here](https://github.com/parcel-bundler/parcel/discussions/5429)). But a replacement will be a minimal invasive surgery because of its almost matching APIs, also the package.json is already v2 ready. There is also already a [v2 branch](https://github.com/lookmom/nohands/tree/feature/parcel2).
-
 You'll also need to add polyfills as you need them. `core-js` is your friend here.
 
 Prerequisites
