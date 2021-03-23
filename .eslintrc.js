@@ -21,7 +21,6 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'prettier',
-    'prettier/react',
   ],
   settings: {
     react: {
@@ -108,8 +107,11 @@ module.exports = {
     radix: 'error',
     'space-before-function-paren': 'off',
     'space-in-parens': ['off', 'never'],
-    'spaced-comment': ['error', 'always', { markers: ['/'] }],
-    'sort-imports': ['warn', { ignoreCase: true, ignoreMemberSort: false, allowSeparatedGroups: true }],
+    'spaced-comment': ['warn', 'always', { markers: ['/'] }],
+    'sort-imports': [
+      'warn',
+      { ignoreCase: true, allowSeparatedGroups: true, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] },
+    ],
     'use-isnan': 'error',
     'valid-typeof': 'off',
     'react/prop-types': 'off',
