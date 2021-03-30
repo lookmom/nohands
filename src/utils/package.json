@@ -4,7 +4,7 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "i18next": "20.0.0",
+    "i18next": "20.1.0",
     "react": "17.0.2"
   }
 }
