@@ -4,6 +4,9 @@
   "main": "index.html",
   "browserslist": "> 2%, not dead",
   "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
   "dependencies": {
     "@src/components": "1.0.0",
     "@src/locales": "1.0.0",

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "i18n.ts",
   "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
   "dependencies": {
     "@src/utils": "1.0.0",
     "i18next": "20.2.1",

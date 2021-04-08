@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
   "dependencies": {
     "@src/api": "1.0.0",
     "@src/utils": "1.0.0",

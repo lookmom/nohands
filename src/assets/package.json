@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "theme.scss",
   "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
   "dependencies": {
     "bootstrap": "5.0.0-beta2"
   }
