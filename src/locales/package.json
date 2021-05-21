@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@src/utils": "1.0.0",
-    "i18next": "20.2.1",
-    "react-i18next": "11.8.12"
+    "i18next": "20.2.4",
+    "react-i18next": "11.8.15"
   }
 }

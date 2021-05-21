@@ -10,6 +10,6 @@
     "@src/utils": "1.0.0"
   },
   "dependencies": {
-    "i18next": "20.2.1"
+    "i18next": "20.2.4"
   }
 }
