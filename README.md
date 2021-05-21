@@ -7,7 +7,7 @@ nohands is my personal, opinionated, zero-config starter kit based on:
 * [SCSS](https://sass-lang.com/), because you don't want to do CSS (also I hate the css-in-js approach, especially in production)
 * [react](https://reactjs.org/) for its minimal boilerplate - In my entire (15 year career) I have never written less to achieve the same goal
 * [react-router](https://reactrouter.com/web/guides/quick-start) for its industry-standard and awesome documentation
-* [bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) for its style framework and very good variables
+* [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) for its style framework and very good variables
 * [reactstrap](https://reactstrap.github.io/) for its convenient way of using bootstrap components
 * [i18next](https://www.i18next.com/) for its easy to learn and use way of doing i18n, also industry-standards (BabelEdit etc.)
 * [prettier](https://prettier.io/), because I don't want to reinvent the wheel - set and enforce standards across the team (possibly prevent the tabs-vs-spaces war, because spaces are surely superior as everyone knows and agrees upon on)

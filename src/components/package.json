@@ -9,9 +9,9 @@
   "dependencies": {
     "@src/api": "1.0.0",
     "@src/utils": "1.0.0",
-    "bootstrap": "4.6.0",
+    "bootstrap": "5.0.1",
     "react": "17.0.2",
-    "reactstrap": "8.9.0"
+    "reactstrap": "9.0.0-0"
   },
   "devDependencies": {
     "@types/react": "17.0.6"

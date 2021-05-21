@@ -34,7 +34,7 @@
     "src/*"
   ],
   "dependencies": {
-    "@parcel/transformer-sass": "2.0.0-nightly.637",
+    "@parcel/transformer-sass": "2.0.0-nightly.680",
     "@prettier/plugin-xml": "0.13.1",
     "@typescript-eslint/eslint-plugin": "4.24.0",
     "@typescript-eslint/parser": "4.24.0",
@@ -49,7 +49,7 @@
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
     "npm-run-all": "4.1.5",
-    "parcel": "2.0.0-nightly.635",
+    "parcel": "2.0.0-nightly.678",
     "prettier": "2.3.0",
     "rimraf": "3.0.2",
     "servor": "4.0.2",
