@@ -1,0 +1,10 @@
+{
+  "name": "@src/locales",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  }
+}

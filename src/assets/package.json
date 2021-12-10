@@ -1,0 +1,14 @@
+{
+  "name": "@src/assets",
+  "version": "1.0.0",
+  "source": "theme.scss",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
+  "dependencies": {
+    "bootstrap": "5.1.3",
+    "bootswatch": "5.1.3"
+  }
+}

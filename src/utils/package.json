@@ -1,0 +1,13 @@
+{
+  "name": "@src/utils",
+  "version": "1.0.0",
+  "source": "index.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
+  "dependencies": {
+    "react": "17.0.2"
+  }
+}

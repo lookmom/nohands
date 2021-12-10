@@ -1,0 +1,16 @@
+{
+  "APP": {
+    "TITLE": "Bootstrap"
+  },
+  "PAGE": {
+    "BLOG": {
+      "TITLE": "Blog Template",
+      "DESCRIPTION": "Template example from getbootstrap.com"
+    },
+    "NOTFOUND": {
+      "TITLE": "404 - Not Found",
+      "DESCRIPTION": "This page does not exist or has been removed.",
+      "GO_BACK": "Go back"
+    }
+  }
+}

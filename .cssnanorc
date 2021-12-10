@@ -1,0 +1,10 @@
+{
+  "preset": [
+    "default",
+    {
+      "discardComments": {
+        "removeAll": true
+      }
+    }
+  ]
+}

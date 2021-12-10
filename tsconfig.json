@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    // "incremental": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "jsx": "react",
+    "lib": ["DOM", "ESNext"],
+    "module": "esnext", // enables code-splitting
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "es5"
+  },
+  "types": ["node", "react"],
+  "exclude": ["**/test/**", "**/*.test.ts", "**/*.test.tsx"]
+}

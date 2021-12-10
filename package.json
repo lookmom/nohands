@@ -1,0 +1,75 @@
+{
+  "name": "nohands",
+  "version": "1.0.0",
+  "repository": "git@github.com:lookmom/nohands.git",
+  "author": "Kai Dorschner <me@krnl.de>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16.13.0",
+    "npm": ">=8.1.0"
+  },
+  "source": "src/app/index.html",
+  "browserslist": "last 2 Chrome versions",
+  "scripts": {
+    "build": "run-s build:no-scope-hoist",
+    "build:with-sourcemaps": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer",
+    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
+    "build:no-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps --no-scope-hoist",
+    "check:all": "run-s -c check:ts lint:ts check:deps",
+    "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
+    "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
+    "clean-for-build": "rimraf dist",
+    "clean": "rimraf dist .cache .parcel-cache src/**/.cache src/**/.parcel-cache && npm run clean -ws && git gc",
+    "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/app | dot -T svg > dependency-graph.svg",
+    "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
+    "prepare": "husky install && run-s clean",
+    "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\"",
+    "sb": "run-s start:build",
+    "start:build": "servor dist --browse",
+    "start": "parcel serve src/app/index.html --open",
+    "up": "npm-check -u"
+  },
+  "workspaces": [
+    "src/*"
+  ],
+  "dependencies": {
+    "@parcel/compressor-brotli": "2.0.1",
+    "@parcel/compressor-gzip": "2.0.1",
+    "@parcel/reporter-bundle-analyzer": "2.0.1",
+    "@parcel/transformer-sass": "2.0.1",
+    "@prettier/plugin-xml": "1.1.0",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "cross-env": "7.0.3",
+    "dependency-cruiser": "10.7.0",
+    "eslint": "8.3.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.2",
+    "npm-check": "5.9.2",
+    "npm-run-all": "4.1.5",
+    "parcel": "2.0.1",
+    "prettier": "2.5.0",
+    "rimraf": "3.0.2",
+    "sass": "1.43.5",
+    "servor": "4.0.2",
+    "sharp": "0.29.3",
+    "stylelint": "14.1.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-prettier": "2.0.0",
+    "typescript": "4.5.2"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint -c .eslintrc.js --ext .ts --fix"
+    ],
+    "**/*.{js,jsx,ts,tsx,json,scss}": [
+      "prettier --write"
+    ]
+  }
+}
