@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Badge } from 'reactstrap';
 
 import { useTranslations } from '@src/components/Intl';
 
@@ -430,7 +431,8 @@ const BlogExample = () => {
       <footer className="blog-footer">
         <p>
           Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by{' '}
-          <a href="https://twitter.com/mdo">@mdo</a>.
+          <a href="https://twitter.com/mdo">@mdo</a>. Version {process.env.VERSION}-{process.env.BUILD_NUMBER}{' '}
+          <Badge color="info">{process.env.TARGET}</Badge>
         </p>
         <p>
           <a href="#">Back to top</a>
