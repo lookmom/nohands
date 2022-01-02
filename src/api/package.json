@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@src/utils": "1.0.0",
-    "use-intl": "2.3.0"
+    "use-intl": "2.3.3"
   }
 }
