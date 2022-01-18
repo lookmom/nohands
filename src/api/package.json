@@ -2,7 +2,6 @@
   "name": "@src/api",
   "version": "1.0.0",
   "source": "index.ts",
-  "sideEffects": false,
   "license": "MIT",
   "scripts": {
     "clean": "echo \"noop\""

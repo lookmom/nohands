@@ -2,7 +2,6 @@
   "name": "@src/app",
   "version": "1.0.0",
   "source": "index.html",
-  "sideEffects": false,
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "license": "MIT",
   "scripts": {
