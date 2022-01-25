@@ -15,7 +15,7 @@
     "bootstrap": "5.1.3",
     "react": "17.0.2",
     "reactstrap": "9.0.1",
-    "use-intl": "2.3.3"
+    "use-intl": "2.3.5"
   },
   "devDependencies": {
     "@types/react": "17.0.38"

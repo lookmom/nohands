@@ -13,14 +13,12 @@
   "browserslist": "last 2 Chrome versions",
   "scripts": {
     "build": "run-s build:with-scope-hoist",
-    "build:with-sourcemaps": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer",
-    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
-    "build:no-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level verbose --dist-dir dist --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps --no-scope-hoist",
+    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level info --dist-dir build --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
     "check:all": "run-s -c check:ts lint:ts check:deps",
     "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
-    "clean-for-build": "rimraf dist",
-    "clean": "rimraf dist .cache .parcel-cache src/**/.cache src/**/.parcel-cache && npm run clean -ws && git gc",
+    "clean-for-build": "rimraf dist/* build/* .parcel-cache",
+    "clean": "rimraf dist/* build/* parcel-bundle-reports .cache .parcel-cache ./src/**/.cache ./src/**/.parcel-cache && npm run clean --workspaces --if-present",
     "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/app | dot -T svg > dependency-graph.svg",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
     "prepare": "husky install && run-s clean",
@@ -28,7 +26,7 @@
     "sb": "run-s start:build",
     "start:build": "servor dist --browse",
     "start": "parcel serve src/app/index.html --open",
-    "up": "npm-check -u"
+    "up": "ncu -ui --deep"
   },
   "workspaces": [
     "src/*"
@@ -39,10 +37,10 @@
     "@parcel/reporter-bundle-analyzer": "2.2.1",
     "@parcel/transformer-sass": "2.2.1",
     "@prettier/plugin-xml": "1.2.0",
-    "@typescript-eslint/eslint-plugin": "5.10.0",
-    "@typescript-eslint/parser": "5.10.0",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
     "cross-env": "7.0.3",
-    "dependency-cruiser": "11.2.1",
+    "dependency-cruiser": "11.3.0",
     "eslint": "8.7.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.4",
@@ -50,19 +48,19 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "husky": "7.0.4",
-    "lint-staged": "12.2.0",
+    "lint-staged": "12.3.1",
     "npm-check": "5.9.2",
     "npm-run-all": "4.1.5",
     "parcel": "2.2.1",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
-    "sass": "1.48.0",
+    "sass": "1.49.0",
     "servor": "4.0.2",
     "sharp": "0.29.3",
-    "stylelint": "14.2.0",
+    "stylelint": "14.3.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-prettier": "2.0.0",
-    "typescript": "4.5.4"
+    "typescript": "4.5.5"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
@@ -71,5 +69,8 @@
     "**/*.{js,jsx,ts,tsx,json,scss}": [
       "prettier --write"
     ]
+  },
+  "devDependencies": {
+    "npm-check-updates": "12.2.1"
   }
 }
