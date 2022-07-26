@@ -24,8 +24,8 @@ You'll also need to add polyfills as you need them. `core-js` is your friend her
 
 # Prerequisites
 
-- [Node.js](https://nodejs.org/) `>= 16.0.0`
-- [npm](https://npmjs.com/) `>= 1.22.15`
+- [Node.js](https://nodejs.org/) `>= 16.13.0`
+- [npm](https://npmjs.com/) `>= 8.1.0`
 - Under windows: [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): `npm install --global --production windows-build-tools@4.0.0`
 
 It is also recommended (though not required) to install the following plugins in your IDE (I favor VSCode) to get the most out of this repo:
