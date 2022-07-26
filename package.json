@@ -32,35 +32,35 @@
     "src/*"
   ],
   "dependencies": {
-    "@parcel/compressor-brotli": "2.2.1",
-    "@parcel/compressor-gzip": "2.2.1",
-    "@parcel/reporter-bundle-analyzer": "2.2.1",
-    "@parcel/transformer-sass": "2.2.1",
-    "@prettier/plugin-xml": "1.2.0",
-    "@typescript-eslint/eslint-plugin": "5.10.1",
-    "@typescript-eslint/parser": "5.10.1",
+    "@parcel/compressor-brotli": "2.6.2",
+    "@parcel/compressor-gzip": "2.6.2",
+    "@parcel/reporter-bundle-analyzer": "2.6.2",
+    "@parcel/transformer-sass": "2.6.2",
+    "@prettier/plugin-xml": "2.2.0",
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
     "cross-env": "7.0.3",
-    "dependency-cruiser": "11.3.0",
-    "eslint": "8.7.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-jsx-a11y": "6.5.1",
-    "eslint-plugin-react": "7.28.0",
-    "eslint-plugin-react-hooks": "4.3.0",
-    "husky": "7.0.4",
-    "lint-staged": "12.3.1",
-    "npm-check": "5.9.2",
+    "dependency-cruiser": "11.13.0",
+    "eslint": "8.20.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "npm-check-updates": "16.0.0",
     "npm-run-all": "4.1.5",
-    "parcel": "2.2.1",
-    "prettier": "2.5.1",
+    "parcel": "2.6.2",
+    "prettier": "2.7.1",
     "rimraf": "3.0.2",
-    "sass": "1.49.0",
+    "sass": "1.54.0",
     "servor": "4.0.2",
-    "sharp": "0.29.3",
-    "stylelint": "14.3.0",
+    "sharp": "0.30.7",
+    "stylelint": "14.9.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-prettier": "2.0.0",
-    "typescript": "4.5.5"
+    "typescript": "4.7.4"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
@@ -71,6 +71,6 @@
     ]
   },
   "devDependencies": {
-    "npm-check-updates": "12.2.1"
+    "process": "0.11.10"
   }
 }

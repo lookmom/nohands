@@ -1,5 +1,5 @@
 import React from 'react';
-import { IntlMessages, IntlProvider as ReactIntlProvider } from 'use-intl';
+import { AbstractIntlMessages, IntlProvider as ReactIntlProvider } from 'use-intl';
 
 import { useLazy } from '@src/utils';
 import { logger } from '@src/utils/logger';
@@ -25,10 +25,10 @@ export const useLocale = () => {
 interface Props {
   defaultLocale?: string;
   fallbackLocale?: string;
-  localeMap: { [locale: string]: () => Promise<IntlMessages> };
+  localeMap: { [locale: string]: () => Promise<AbstractIntlMessages> };
 }
 
-export const IntlProvider: React.FC<Props> = ({
+export const IntlProvider: React.FC<React.PropsWithChildren<Props>> = ({
   defaultLocale = DEFAULT_LOCALE,
   fallbackLocale = DEFAULT_LOCALE,
   localeMap,
