@@ -27,6 +27,7 @@
     "start:build": "servor dist --browse",
     "start": "parcel serve src/apps/default/index.html --open",
     "start:dark": "parcel serve src/apps/dark/index.html --open",
+    "start:backend": "ts-node ./src/backend/server.ts",
     "up": "ncu -ui --deep"
   },
   "workspaces": [
@@ -73,6 +74,7 @@
     ]
   },
   "devDependencies": {
-    "process": "0.11.10"
+    "process": "0.11.10",
+    "ts-node": "10.9.1"
   }
 }

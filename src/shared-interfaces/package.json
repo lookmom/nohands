@@ -1,0 +1,9 @@
+{
+  "name": "@src/shared-interfaces",
+  "version": "1.0.0",
+  "source": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  }
+}

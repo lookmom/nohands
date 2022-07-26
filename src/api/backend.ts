@@ -35,7 +35,7 @@ class Backend {
     // 'Authorization': 'Bearer ' + localStorage.getItem('clientToken'),
   };
 
-  static backendBasePath = '/faceless/pwa/1';
+  static backendBasePath = '/api/v1';
 
   static patchDefaultHeader(headers: HeadersInit) {
     this.defaultHeaders = {

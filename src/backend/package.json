@@ -1,0 +1,13 @@
+{
+  "name": "@src/backend",
+  "version": "1.0.0",
+  "source": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
+  "dependencies": {
+    "@src/shared-interfaces": "1.0.0",
+    "fastify": "4.3.0"
+  }
+}

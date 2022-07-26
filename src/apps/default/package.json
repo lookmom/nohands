@@ -1,0 +1,26 @@
+{
+  "name": "@src/app-default",
+  "version": "1.0.0",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo \"noop\""
+  },
+  "dependencies": {
+    "@src/components": "1.0.0",
+    "@src/locales": "1.0.0",
+    "bootstrap": "5.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-helmet": "6.1.0",
+    "react-router-dom": "6.3.0",
+    "reactstrap": "9.1.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@types/react-helmet": "6.1.5",
+    "@types/react-router-dom": "5.3.3"
+  }
+}
