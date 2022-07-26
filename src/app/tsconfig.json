@@ -1,7 +1,0 @@
-{
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "module": "esnext", // enables code-splitting
-    "jsx": "react"
-  }
-}

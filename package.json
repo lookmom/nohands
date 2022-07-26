@@ -13,23 +13,24 @@
   "browserslist": "last 2 Chrome versions",
   "scripts": {
     "build": "run-s build:with-scope-hoist",
-    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/app/index.html --log-level info --dist-dir build --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
+    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/apps/default/index.html --log-level info --dist-dir build --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
     "check:all": "run-s -c check:ts lint:ts check:deps",
-    "check:deps": "dependency-cruise --config .dependency-cruiser.js src/app",
+    "check:deps": "dependency-cruise --config .dependency-cruiser.js src/apps/default",
     "check:ts": "tsc --version && tsc -p . --pretty --noEmit",
     "clean-for-build": "rimraf dist/* build/* .parcel-cache",
     "clean": "rimraf dist/* build/* parcel-bundle-reports .cache .parcel-cache ./src/**/.cache ./src/**/.parcel-cache && npm run clean --workspaces --if-present",
-    "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/app | dot -T svg > dependency-graph.svg",
+    "draw:deps": "dependency-cruise --config .dependency-cruiser.js --output-type dot src/apps/default | dot -T svg > dependency-graph.svg",
     "lint:ts": "eslint --version && eslint -c .eslintrc.js \"./**/*.{ts,tsx}\" --fix",
     "prepare": "husky install && run-s clean",
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\"",
     "sb": "run-s start:build",
     "start:build": "servor dist --browse",
-    "start": "parcel serve src/app/index.html --open",
+    "start": "parcel serve src/apps/default/index.html --open",
     "up": "ncu -ui --deep"
   },
   "workspaces": [
-    "src/*"
+    "src/*",
+    "src/apps/*"
   ],
   "dependencies": {
     "@parcel/compressor-brotli": "2.6.2",
