@@ -12,7 +12,7 @@
   "source": "src/app/index.html",
   "browserslist": "last 2 Chrome versions",
   "scripts": {
-    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/apps/default/index.html --log-level info --dist-dir build --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps",
+    "build:with-scope-hoist": "run-s clean-for-build && parcel build ./src/apps/default/index.html --log-level info --dist-dir build --detailed-report --reporter @parcel/reporter-bundle-analyzer --no-source-maps --no-autoinstall",
     "build": "run-s build:with-scope-hoist",
     "check:all": "run-s -c check:ts lint:ts check:deps",
     "check:deps": "dependency-cruise --config .dependency-cruiser.js src/apps/default",
@@ -25,9 +25,10 @@
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,scss}\"",
     "sb": "run-s start:build",
     "start:build": "servor dist --browse",
-    "start": "parcel serve src/apps/default/index.html --open",
-    "start:dark": "parcel serve src/apps/dark/index.html --open",
+    "start": "parcel serve src/apps/default/index.html --open --no-autoinstall",
+    "start:dark": "parcel serve src/apps/dark/index.html --open --no-autoinstall",
     "start:backend": "ts-node ./src/backend/server.ts",
+    "start:both": "run-p start:backend start:dark",
     "up": "ncu -ui --deep"
   },
   "workspaces": [
@@ -63,6 +64,7 @@
     "stylelint": "14.9.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-prettier": "2.0.0",
+    "ts-node": "10.9.1",
     "typescript": "4.7.4"
   },
   "lint-staged": {
@@ -73,8 +75,8 @@
       "prettier --write"
     ]
   },
-  "devDependencies": {
-    "process": "0.11.10",
-    "ts-node": "10.9.1"
+  "overrides": {
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   }
 }
