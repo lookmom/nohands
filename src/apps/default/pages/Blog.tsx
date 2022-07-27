@@ -1,3 +1,4 @@
+// Here we disable eslint rules because we use a generic Bootstrap example and don't want to adapt their code to our guidelines
 /* eslint-disable react/jsx-no-literals */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
