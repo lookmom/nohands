@@ -78,5 +78,8 @@
   "overrides": {
     "react": "18.0.0",
     "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "process": "0.11.10"
   }
 }
