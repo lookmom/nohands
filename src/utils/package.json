@@ -7,6 +7,6 @@
     "clean": "echo \"noop\""
   },
   "dependencies": {
-    "react": "18.0.0"
+    "react": "18.2.0"
   }
 }

@@ -7,17 +7,17 @@
     "clean": "echo \"noop\""
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@src/api": "1.0.0",
     "@src/utils": "1.0.0",
-    "bootstrap": "5.2.0",
-    "react": "18.0.0",
-    "reactstrap": "9.1.2",
-    "use-intl": "2.7.4"
+    "bootstrap": "5.2.2",
+    "react": "18.2.0",
+    "reactstrap": "9.1.4",
+    "use-intl": "2.7.6"
   },
   "devDependencies": {
-    "@types/react": "18.0.15"
+    "@types/react": "18.0.21"
   }
 }
