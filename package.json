@@ -6,8 +6,8 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=16.13.0",
-    "npm": ">=8.1.0"
+    "node": ">=16.18.0",
+    "npm": ">=8.19.2"
   },
   "source": "src/app/index.html",
   "browserslist": "last 2 Chrome versions",
