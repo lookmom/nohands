@@ -6,7 +6,7 @@ nohands is my personal, opinionated, zero-config starter kit based on:
 - [parcel](https://parceljs.org/) for its (zero-config) ease of use and tree-shaking
 - [typescript](https://www.typescriptlang.org/) for its types, duuh. (Also its es5 transpiling)
 - [SCSS](https://sass-lang.com/), because you don't want to do CSS (also I hate the css-in-js approach, especially in production)
-- [react](https://reactjs.org/) for its minimal boilerplate - In my entire (15 year career) I have never written less to achieve the same goal
+- [react](https://reactjs.org/) for its minimal boilerplate - In my entire (15+ year career) I have never written less to achieve the same goal
 - [react-router](https://reactrouter.com/web/guides/quick-start) for its industry-standard and awesome documentation
 - [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) for its style framework and very good variables
 - [reactstrap](https://reactstrap.github.io/) for its convenient way of using bootstrap components
@@ -24,8 +24,8 @@ You'll also need to add polyfills as you need them. `core-js` is your friend her
 
 # Prerequisites
 
-- [Node.js](https://nodejs.org/) `>= 16.13.0`
-- [npm](https://npmjs.com/) `>= 8.1.0`
+- [Node.js](https://nodejs.org/) `>= 16.18.0`
+- [npm](https://npmjs.com/) `>= 8.19.2`
 - Under windows: [windows-build-tools](https://www.npmjs.com/package/windows-build-tools): `npm install --global --production windows-build-tools@4.0.0`
 
 It is also recommended (though not required) to install the following plugins in your IDE (I favor VSCode) to get the most out of this repo:
