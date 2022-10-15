@@ -32,8 +32,7 @@
     "up": "ncu -ui --workspaces --root"
   },
   "workspaces": [
-    "src/*",
-    "src/apps/*"
+    "src/*"
   ],
   "dependencies": {
     "@parcel/reporter-bundle-analyzer": "2.7.0",
